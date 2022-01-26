@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+ 
+  html,body{
+       width: 100%;
+       height: 100%;
+       background-color: rgb(181, 210, 243);
+  }
+  #vip
+  {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+#main
+{
+  position: absolute;
+  display: flex;
+  width: 70%;
+  height: 80%;
+  background-color: rgb(160, 111, 111);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50px;
+}
+#left
+{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(68, 124, 128);
+}
+#right
+{
+  
+  width: 50%;
+  height: 100%;
+  background-color: rgba(42, 158, 173, 0.993);
+
+}
+#centerimg
+{
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  background-image: url(https://images.unsplash.com/photo-1535342928087-299088a78600?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80);
+  background-position: center;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px silver;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#nav
+{
+  position: absolute; 
+  width: 18%;
+  height: 100%;
+  background-color: rgba(220, 20, 60, 0);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+   right: 0%;
+}
+#nav .img
+{
+  width: 80%;
+  height: 30%;
+  border-radius: 50px;
+  box-shadow: 5px 5px 2px black;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+  z-index: 1000;
+
+}
+#nav .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+
+}
+#text
+{
+  position: absolute;
+  letter-spacing: 0px;
+  line-height: 40px;
+  font-size:15px;
+  font-family: cursive;
+  z-index: 99;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  
+}
+#text #b
+{
+  position: absolute;
+  left: 30px;
+}
+#left #back
+{
+  position: absolute;
+  width: 60%;
+  height: 35%;
+  background-color: rgb(219, 193, 152);
+  top: 50%;
+  left: -1%;
+  transform: translate(-50%,-50%);
+}
+#back h1
+{
+  position: absolute;
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: bolder;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+#left #img
+{
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-image: url(https://media.istockphoto.com/photos/wildlife-photographer-in-the-ghillie-suit-working-picture-id1060795162);
+  background-position: center;
+  background-size: cover;
+  
+ 
+}
+#wlp
+{
+  position: absolute;
+  width: 90%;
+  height: 5%;
+  display: flex;
+  z-index: 100;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 255, 0);
+  align-items: center;
+  top: 3%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+#corner
+{
+  position: absolute;
+  width: 15%;
+  height: 80%;
+  background-color: rgba(165, 42, 42, 0);
+  top: 50%;
+  right:0;
+  transform: translate(0%,-50%);
+  border: solid .3px;
+  color: black;
+}
+#logo
+{
+  position: absolute;
+  width: 50%;
+  height: 20%;
+  background-image: url(https://media.istockphoto.com/photos/great-tit-picture-id181938982);
+  background-position: center;
+  background-size: cover;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50px;
+  border: solid 3px;
+  color: #fff;
+  
+}
+#about
+{
+  position: absolute;
+  font-size: 6px;
+  top: 40%;
+  left: 35%;
+  transform: translate(-50%,-50%);
+  
+  
+}
+#text3
+{
+  position: absolute;
+  top: 40px;
+  left: 35px;
+  line-height: 20px;
+  font-size: 15px;
+}
+#centerimg:hover
+{
+
+  width: 50%;
+  cursor: pointer;
+}
+#nav .img:hover
+{
+  height: 50%;
+  cursor: pointer;
+}
+#wlp .s{
+  padding: 5px 5px 10px 5px;
+  height: 20px;
+  background-color: transparent;
+}
+#wlp .s:hover
+{
+  background-color: #fff;
+  height: 20px;
+  cursor: pointer;
+}
+#but
+{
+  position: relative;
+  width: 20%;
+  height: 20%;
+  background-color: rgba(216, 9, 9, 0);
+  border-radius: 50%;
+  border: solid .3px;
+  color: rgb(0, 0, 0);
+  top: 25%;
+  left: 85%;
+  transform: translate(-50%,-50%);
+}
+#but a
+{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+  color: #fff;
+}
+#but:hover
+{
+  background-color: rgba(248, 248, 248, 0.336);
+}
+#but a:hover
+{
+  color: black;
+
+}
+#link
+{
+  position: absolute;
+  display: flex;
+  width: 130px;
+  height: 25px;
+  background-color: rgba(0, 0, 255, 0);
+  top: 90%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  line-height: 30px;
+  justify-content: space-between;
+  
+}
+#link #intagram
+{
+  width: 30px;
+  height: 30px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#link #fac
+{
+
+  width: 30px;
+  height: 30px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#link #tw
+{
+  width: 30px;
+  height: 30px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#link #intagram:hover
+{
+  height: 80%;
+  width: 90%;
+}
+#link #fac:hover
+{
+  height: 80%;
+  width: 90%;
+}
+#link #tw:hover
+{
+  height: 80%;
+  width: 90%;
+}
+
+
